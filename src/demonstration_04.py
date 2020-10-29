@@ -24,5 +24,15 @@ Notes:
 
 
 def emotify(txt):
-    # Your code here
+    emotes = dict((
+        ('smile',':D'),
+        ('grin',':)'),
+        ('sad',':('),
+        ('mad',':P'),)
+        )
+    return emotes[txt.split(' ')[-1]]
 
+
+print(emotify("Make me smile"))
+print(emotify("Make me grin"))
+print(emotify("Make me sad"))

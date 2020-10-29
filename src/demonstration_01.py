@@ -16,5 +16,10 @@ Notes:
 
 
 def last(a, n):
-    # Your code here
+    return 'invalid' if n > len(a) else a[-n:]
 
+
+print(last([1, 2, 3, 4, 5], 1))
+print(last([4, 3, 9, 9, 7, 6], 3))
+print(last([1, 2, 3, 4, 5], 7))
+print(last([1, 2, 3, 4, 5], 0))

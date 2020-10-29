@@ -13,5 +13,9 @@ Examples:
 - repeat_it("cwAt") -> "C-Ww-Aaa-Tttt"
 """
 def repeat_it(input_str):
-    # Your code here
+    return '-'.join([(char+char * count).capitalize() for count, char in enumerate(input_str)])
 
+
+print(repeat_it("abcd"))
+print(repeat_it("RqaEzty"))
+print(repeat_it("cwAt"))

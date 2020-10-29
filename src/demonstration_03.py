@@ -12,6 +12,12 @@ Examples:
 Notes:
 - Bonus: Try to complete this challenge in one line!
 """
+import numpy as np
 def multiply_nums(nums):
-    # Your code here
+    return np.prod([int for int in map(int, nums.split(', '))])
 
+
+print(multiply_nums("2, 3"))
+print(multiply_nums("1, 2, 3, 4"))
+print(multiply_nums("54, 75, 453, 0"))
+print(multiply_nums("10, -2"))
